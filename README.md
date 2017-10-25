@@ -5,8 +5,8 @@ In this project you are given a web-based application that reads RSS feeds. The 
 
 ## Set up and run
 
-*Click the button "Clone or download".
-*To view this project, open index.html to your browser with internet connection.
+- Click the button "Clone or download".
+- To view this project, open index.html to your browser with internet connection.
 
 ## Why this Project?
 
