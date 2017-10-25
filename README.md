@@ -57,7 +57,13 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 - Test allFeeds object use forEach for url and name to define these are not empty.
 
 ### The menu
-Make var menuicon for $(".menu-icon-link");
 - Test the menu element is hidden by default. 
 So we check into html and css files and we find out the "menu-hidden", and we need to test it.
 - Test visibility when menu icon is clicked.
+
+### Initial Entries
+- First we use beforeEach for loadFeed.  
+- Test entries(.feed .entry) as asynchronous done() function.
+
+### New Feed Selection
+-
