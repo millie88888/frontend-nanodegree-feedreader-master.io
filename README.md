@@ -62,8 +62,8 @@ So we check into html and css files and we find out the "menu-hidden", and we ne
 - Test visibility when menu icon is clicked.
 
 ### Initial Entries
-- First we use beforeEach for loadFeed.  
-- Test entries(.feed .entry) as asynchronous done() function.
+- First we use beforeEach for loadFeed as asynchronous.  
+- Test entries(.feed .entry).
 
 ### New Feed Selection
--
+- Write beforeEach with loadFeed function and change feeds sections with random select.
