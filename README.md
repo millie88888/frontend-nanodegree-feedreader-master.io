@@ -51,3 +51,13 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 19. Implement error handling for undefined variables and out-of-bound array access.
 20. When complete - all of your tests should pass. 
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+
+### RSS Feeds
+- Define allFeeds variable
+- Test allFeeds object use forEach for url and name to define these are not empty.
+
+### The menu
+Make var menuicon for $(".menu-icon-link");
+- Test the menu element is hidden by default. 
+So we check into html and css files and we find out the "menu-hidden", and we need to test it.
+- Test visibility when menu icon is clicked.
