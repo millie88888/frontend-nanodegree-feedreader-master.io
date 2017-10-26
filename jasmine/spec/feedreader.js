@@ -134,31 +134,33 @@ $(function() {
     */
 
         var changeFeed;
-        var feed = $('.feed');
-        var feedChoise = Math.floor(Math.random() * 3) + 1;
+        var originalFeed = $('.feed').html();
+        var randomFeed = Math.floor(Math.random() * 3) + 1;
 
         //async finished before the test.
         beforeEach(function(done){
-            
             loadFeed(0, function(){
-               changeFeed = feed.html();
-               loadFeed(feedChoise, done);
+               originalFeed = $('.feed').html();
+               loadFeed(randomFeed);
+               done();
             });
 
         });
 
-        afterEach(function(){
-            changeFeed = 0;
+        afterEach(function(done){
+            changeFeed = (0, done);
         });
 
         //Tests that a new feed is loaded and the content changes.
-        it('to change content and feeds', function(){
-            loadFeed(0, function(){
-                expect(1).toBeGreaterThan(0);
+        it('to change content and feeds', function(done){
+            loadFeed(1, function(){
+                changeFeed = $('.feed').html();
+                expect(originalFeed).not.toEqual(changeFeed);
                 done();
             });
-            expect(feed.html()).not.toBe(changeFeed);
-        }, 2000);
+
+            
+        });
 
     });
 
