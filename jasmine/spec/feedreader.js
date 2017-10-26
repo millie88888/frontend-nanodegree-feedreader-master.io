@@ -129,10 +129,11 @@ $(function() {
         //async finished before the test.
         beforeAll(function(done) {
             loadFeed(0, function() {
-                originalFeed;
-                loadFeed(randomFeed);
+                var originalFeed = $('.feed').html();
                 done();
             });
+
+            loadFeed(randomFeed);
 
         });
 
