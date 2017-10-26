@@ -137,10 +137,6 @@ $(function() {
 
         });
 
-        //afterEach(function(done){
-        //    changeFeed = (0, done);
-        // });
-
         //Tests that a new feed is loaded and the content changes.
         it('to change content and feeds', function(done) {
             loadFeed(0, function() {
