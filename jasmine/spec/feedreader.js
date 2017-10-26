@@ -133,27 +133,27 @@ $(function() {
      * Remember, loadFeed() is asynchronous.
     */
 
-        var changeFeed;
+        var changeFeed = $('.feed').html();
         var originalFeed = $('.feed').html();
         var randomFeed = Math.floor(Math.random() * 3) + 1;
 
         //async finished before the test.
-        beforeEach(function(done){
+        beforeAll(function(done){
             loadFeed(0, function(){
-               originalFeed = $('.feed').html();
+               originalFeed;
                loadFeed(randomFeed);
                done();
             });
 
         });
 
-        afterEach(function(done){
-            changeFeed = (0, done);
-        });
+        //afterEach(function(done){
+        //    changeFeed = (0, done);
+       // });
 
         //Tests that a new feed is loaded and the content changes.
         it('to change content and feeds', function(done){
-            loadFeed(1, function(){
+            loadFeed(0, function(){
                 changeFeed = $('.feed').html();
                 expect(originalFeed).not.toEqual(changeFeed);
                 done();
