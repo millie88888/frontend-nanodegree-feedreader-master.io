@@ -124,7 +124,7 @@ $(function() {
         beforeAll(function(done) {
             loadFeed(1, function() {
                 originalFeed = $('.feed').html();
-                loadFeed(0, done)
+                loadFeed(0, done);
             });
 
         });
